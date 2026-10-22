@@ -1,6 +1,14 @@
 <script setup lang="ts">
 import { computed, ref, watch, onMounted } from 'vue'
-import { GraduationCap, ArrowUpRight, ArrowLeft, ArrowRight, Menu, X, Languages, Check, ArrowDown, BookOpen, Video, PlayCircle, CalendarDays, UserRound, Users, MessageCircle, ChevronDown, Quote, Sparkles, Headphones, ShieldCheck, Globe2, Star, Clock3, NotebookPen, Target, HeartHandshake, ClipboardCheck, TrendingUp, Zap } from 'lucide-vue-next'
+
+import {
+  GraduationCap, ArrowUpRight, Menu, X, Languages,
+  Check, ArrowDown, BookOpen, Video, PlayCircle,
+  CalendarDays, UserRound, Users, MessageCircle,
+  ChevronDown, Sparkles, Headphones, Globe2,
+  NotebookPen, Target, HeartHandshake, ClipboardCheck
+} from 'lucide-vue-next'
+
 
 type Lang = 'ar' | 'en'
 const lang=ref<Lang>('ar')
