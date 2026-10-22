@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+:root { font-family:'Cairo',sans-serif; font-synthesis:none; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased; scroll-behavior:smooth; }
+html[lang="en"]{font-family:'Manrope',sans-serif}
+body{margin:0;background:#f8faff;color:#102654}
+button,a{cursor:pointer}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #60a5fa;outline-offset:4px}
+::selection{background:#bfdbfe;color:#102654}
+.section-kicker{display:inline-flex;align-items:center;gap:.6rem;border-radius:999px;background:#dbeafe;padding:.55rem 1rem;color:#1d4ed8;font-size:.8rem;font-weight:900;letter-spacing:.015em}
+.reveal{animation:floatin .85s cubic-bezier(.2,.65,.2,1) both}
+@keyframes floatin{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.image-zoom img{transition:transform .85s cubic-bezier(.2,.7,.1,1)}
+.image-zoom:hover img{transform:scale(1.045)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
