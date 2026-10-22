@@ -30,7 +30,7 @@ const waUrl=computed(()=>whatsapp?`https://wa.me/${whatsapp}?text=${encodeURICom
 const photos={
  hero:'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=2200&q=90',
  private:'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1800&q=90',
- group:'/images/group.webp',
+group: `${import.meta.env.BASE_URL}images/group.webp`,
  about:'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1900&q=90',
  moment:'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1900&q=90',
  portrait:'https://images.unsplash.com/photo-1491013516836-7db643ee125a?auto=format&fit=crop&w=900&q=85'
